@@ -1,0 +1,53 @@
+.footerRow {
+  height: 10vh;
+  border-top: 1px solid #9cb9fc;
+  /* background-color: #2667ff; */
+  /* background: radial-gradient(
+    circle at center,
+    #2667ff2b,
+    #2667ff45 30%,
+    #5986ee45,
+    60%,
+    #2667ff3c 100%
+  ); */
+  animation: gradient 15s ease-in-out infinite;
+  background-size: 200% 200%;
+}
+
+.textSpan {
+  font-size: 10px;
+  color: #212121;
+}
+
+.textSpanMod {
+  font-size: 10px;
+  color: #fffff0;
+  margin-right: 10px;
+}
+
+.helpDropdown {
+  background-color: rgba(40, 36, 44, 0.9);
+  min-width: 180px;
+}
+
+.dropdownToggle {
+  background: none;
+  border: none;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  .footerRow .textSpan {
+    display: none;
+  }
+
+  .footerRow .textSpanMobile {
+    display: block;
+    font-size: 10px;
+    color: #fffff0;
+    text-align: center;
+  }
+}

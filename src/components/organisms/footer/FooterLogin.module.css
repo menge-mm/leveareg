@@ -1,0 +1,46 @@
+.footerRow {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid #9cb9fc;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #fcfcfc;
+}
+
+.textSpan {
+  font-size: 10px;
+  /* color: #fffff0; */
+}
+
+.textSpanMod {
+  font-size: 10px;
+  color: #fffff0;
+  margin-right: 10px;
+}
+
+.helpDropdown {
+  background-color: rgba(40, 36, 44, 0.9);
+}
+
+.dropdownToggle {
+  background: none;
+  border: none;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  .footerRow .textSpan {
+    display: none;
+  }
+
+  .footerRow .textSpanMobile {
+    display: block;
+    font-size: 10px;
+    color: #fffff0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,47 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: rgba(38, 103, 255, 0.6);
+    border-bottom: 2px solid white;
+    height: 15vh;
+  }
+  
+
+  .logoContainer {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+  }
+  
+  /* Assuming you have a container for LEVEA and IIII, if not, wrap them in a div */
+  .leveaAndSubtextContainer {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .logo {
+    font-family: 'LeagueGothic', sans-serif;
+    color: #fffff0;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
+  
+  .logoSubtext {
+    font-size: 14px;
+    color: #fffff0;
+    line-height: 1em;
+    margin-left: -1px; /* Adjust as needed */
+    margin-bottom: 14px; /* Adjust as needed */
+  }
+  
+  .tagline {
+    font-family: 'Poppins', sans-serif;
+    color: #fffff0;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: -13px; /* Adjust margin to align under LEVEAIIII */
+    margin-left: -2vw;
+  }
+  

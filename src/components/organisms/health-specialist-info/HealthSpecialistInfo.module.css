@@ -1,0 +1,110 @@
+.infoContainer {
+  padding: 20px;
+  min-height: 60vh;
+}
+
+.accordionItem {
+  border: none;
+}
+
+.accordionControl {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 16px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  font-size: 24px;
+  color: #000;
+  margin-left: auto;
+}
+
+.emoji {
+  margin-right: 10px; /* Adjust space between text and emoji */
+  font-size: 24px;
+}
+
+.panel {
+  padding: 15px;
+  background-color: #f9f9f9; /* Or whatever color matches the screenshot */
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .infoContainer {
+    padding: 20px;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .infoContainer {
+    padding: 20px;
+    max-width: 960px;
+    margin: auto;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+}
+
+.chevron[data-rotate] {
+  transform: rotate(45deg);
+}
+
+.card {
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.cardHeader {
+  background-color: white;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.cardHeader:hover {
+  background-color: #f8f9fa; /* hover effect */
+}
+
+.emoji {
+  font-size: 24px; /* Adjust emoji size as needed */
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.infoContainer {
+  max-width: 960px;
+  margin-right: auto; /* equivalent to mr-2 */
+  margin-left: auto; /* equivalent to ml-2 */
+  /* other styles */
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 0.25rem;
+  border-bottom: double 3px #ccc;
+}

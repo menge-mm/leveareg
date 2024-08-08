@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/msal/SignInSignOutButton.tsx",
+    "src/msal/SignInButton.tsx",
+    "src/components/organisms/error/ErrorCatcher.tsx",
+    "src/components/molecules/form-elements/DatePickerWithYear.jsx",
+    "src/lib/i18n.js",
+    "src/components/molecules/editor/index.jsx",
+    "src/components/molecules/editor/app.jsx",
+    "src/components/molecules/editor/editor.jsx",
+    "src/components/molecules/editor/tiptap.jsx",
+    "src/components/molecules/form-elements/RichTextEditor.tsx"  ],
+  "exclude": ["node_modules"]
+}

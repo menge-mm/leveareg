@@ -1,0 +1,33 @@
+.markdown {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.markdown h2 {
+  font-size: 26px;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  color: rgb(2, 38, 130);
+  font-weight: bold;
+}
+
+.markdown p {
+  margin-bottom: 1rem;
+}
+
+.markdown ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.markdown ul li {
+  margin-bottom: 0.5rem;
+}
+
+.markdown strong {
+  font-weight: bold;
+}

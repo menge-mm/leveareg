@@ -1,0 +1,168 @@
+/* ../styles/login.module.css'; */
+
+.wrapper {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.loginContainer {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  background-size: 200% 200%;
+  background-image: linear-gradient(45deg, #2667ff08, #2667ff36,  #2667ff38);
+  animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.middleCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  overflow: hidden;
+}
+.flexWrapper {
+  flex-grow: 1; /* Grow to take up all available space */
+  display: flex; /* Make this a flex container */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  background-color: transparent;
+}
+
+.footer > .col {
+  margin: 0;
+}
+
+.loginButton {
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+.contentMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255);
+}
+
+.loginForm {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.customButton {
+  background-color: #4a90e2;
+  /* Example color: blue */
+  color: white;
+  border: none;
+  padding: 1.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
+
+.customButton:hover {
+  background-color: #357abd;
+}
+
+.loginCard {
+  width: 33vw;
+  height: 64vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This will distribute space between items */
+  align-items: center;
+  padding: 1rem; /* Adjust padding as needed, but ensure it's there for spacing */
+  margin: 1rem auto; /* Center the card horizontally with auto margins */
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  overflow: hidden; /* Ensures nothing overflows the card */
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 1rem;
+  /* Button padding */
+  font-size: 1rem;
+  /* Button text size */
+}
+
+.hospitalLogo {
+  width: 15vw;
+  margin-top: 1rem; /* Your specified margin */
+  border-radius: 25px; /* Keep your styles */
+  align-self: center; /* Center logo within the card */
+}
+
+.buttonStack {
+  width: 100%; /* Take the full width to align buttons */
+  margin-bottom: 1rem; /* Your specified margin */
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center buttons */
+}
+
+.loginButtons {
+  padding: 0.8rem 6rem; /* Adjust padding as needed */
+  width: auto; /* Let the button content dictate width, or set a specific width */
+  margin: 0.3rem 0; /* Adds space between buttons */
+}
+
+.loginContainer {
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .loginCard {
+    width: 90vw; /* revert to larger width */
+    height: 54vh; /* revert to fixed height */
+  }
+  .hospitalLogo {
+    width: 60vw; /* revert to larger size */
+  }
+}
+@media (min-width: 768px) and (max-width: 1250px) {
+  .hospitalLogo {
+    width: 25vw;
+  }
+
+  .loginCard {
+    width: 50vw;
+  }
+}

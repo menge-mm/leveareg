@@ -1,0 +1,9 @@
+{
+  "cSpell.words": [
+    "Concordium",
+    "fhir"
+  ],
+  "i18n-ally.localesPaths": [
+    "src/locales"
+  ]
+}

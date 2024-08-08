@@ -1,0 +1,33 @@
+.gridTable {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.gridTable.fullWidth {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.gridTable.threeColumns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gridTable > div {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  background-color: #f9f9f9;
+}
+
+.header {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.caption {
+  grid-column: 1 / -1;
+  font-size: 1.5em;
+  margin: 1px 0;
+}
