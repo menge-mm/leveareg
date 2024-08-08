@@ -30,8 +30,8 @@ const Immunization = ({ fieldsSchema, title, description }: any) => {
   };
 
   const collectForm = async () => {
-    const isValid = await form.trigger('immunizations');
-    if (!isValid) return;
+    // const isValid = await form.trigger('immunizations');
+    // if (!isValid) return;
     dispatch({
       type: 'ADD_RESOURCE',
       resource: 'immunizations',

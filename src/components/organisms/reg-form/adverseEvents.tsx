@@ -29,9 +29,9 @@ const AdverseEvent = ({ fieldsSchema, index, title, description }: any) => {
   };
 
   const collectForm = async () => {
-    const isValid = await form.trigger('adverseEvents');
+    // const isValid = await form.trigger('adverseEvents');
 
-    if (!isValid) return;
+    // if (!isValid) return;
     dispatch({
       type: 'ADD_RESOURCE',
       resource: 'adverseEvents',

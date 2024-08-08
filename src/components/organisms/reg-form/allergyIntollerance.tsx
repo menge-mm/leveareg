@@ -29,9 +29,9 @@ const AllergyIntolerance = ({ fieldsSchema, title, description }: any) => {
   };
 
   const collectForm = async () => {
-    const isValid = await form.trigger('allergyIntolerances');
+    // const isValid = await form.trigger('allergyIntolerances');
 
-    if (!isValid) return;
+    // if (!isValid) return;
     dispatch({
       type: 'ADD_RESOURCE',
       resource: 'allergyIntolerances',

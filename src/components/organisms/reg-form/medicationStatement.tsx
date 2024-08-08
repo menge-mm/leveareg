@@ -19,9 +19,8 @@ const MedicalStatement = ({ fieldsSchema, index, title, description }: any) => {
   });
 
   const collectForm = async () => {
-    const isValid = await form.trigger('medicationStatement');
-    // console.log(form.formState.errors);
-    if (!isValid) return;
+    // const isValid = await form.trigger('medicationStatement');
+    // if (!isValid) return;
     dispatch({
       type: 'ADD_RESOURCE',
       resource: 'medicationStatement',

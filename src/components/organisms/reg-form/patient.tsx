@@ -18,9 +18,9 @@ const Patient = ({ fieldsSchema, index, title, description }: any) => {
   });
 
   const collectForm = async () => {
-    const valid = await form.trigger('patient');
+    // const valid = await form.trigger('patient');
 
-    if (!valid) return;
+    // if (!valid) return;
 
     dispatch({
       type: 'ADD_RESOURCE',

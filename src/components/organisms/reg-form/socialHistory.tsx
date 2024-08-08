@@ -19,9 +19,9 @@ const SocialHistory = ({ fieldsSchema, index, title, description }: any) => {
   });
 
   const collectForm = async () => {
-    const isValid = await form.trigger('socialHistory');
+    // const isValid = await form.trigger('socialHistory');
 
-    if (!isValid) return;
+    // if (!isValid) return;
     dispatch({
       type: 'ADD_RESOURCE',
       resource: 'socialHistory',

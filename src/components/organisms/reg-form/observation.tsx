@@ -30,8 +30,8 @@ const Observation = ({ fieldsSchema, index, title, description }: any) => {
   };
 
   const collectForm = async () => {
-    const isValid = await form.trigger('observations');
-    if (!isValid) return;
+    // const isValid = await form.trigger('observations');
+    // if (!isValid) return;
     dispatch({
       type: 'ADD_RESOURCE',
       resource: 'observations',

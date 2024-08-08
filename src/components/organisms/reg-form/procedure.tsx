@@ -29,9 +29,9 @@ const Procedure = ({ fieldsSchema, title, description }: any) => {
   };
 
   const collectForm = async () => {
-    const isValid = await form.trigger('procedures');
+    // const isValid = await form.trigger('procedures');
 
-    if (!isValid) return;
+    // if (!isValid) return;
     dispatch({
       type: 'ADD_RESOURCE',
       resource: 'procedures',

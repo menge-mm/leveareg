@@ -25,8 +25,8 @@ const Consent = ({ fieldsSchema, index, title, description }: any) => {
   });
 
   const collectForm = async () => {
-    const isValid = await form.trigger('consent');
-    if (!isValid) return;
+    // const isValid = await form.trigger('consent');
+    // if (!isValid) return;
     dispatch({
       type: 'ADD_RESOURCE',
       resource: 'consent',

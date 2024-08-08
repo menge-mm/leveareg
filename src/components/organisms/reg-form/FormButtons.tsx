@@ -1,10 +1,10 @@
-import { Button } from "@/components/atoms/button";
-import { ArrowBigLeft, ArrowBigRight, RefreshCcw, SkipForward } from "lucide-react";
-import React from "react";
-import { useRegFormContext } from "./reducer";
-import { steps } from "./steps";
-import { resourceNames } from "./steps";
-import { useFormContext } from "react-hook-form";
+import { Button } from '@/components/atoms/button';
+import { ArrowBigLeft, ArrowBigRight, RefreshCcw, SkipForward } from 'lucide-react';
+import React from 'react';
+import { useRegFormContext } from './reducer';
+import { steps } from './steps';
+import { resourceNames } from './steps';
+import { useFormContext } from 'react-hook-form';
 
 const ConnectForm = ({ children }: { children: React.FC }) => {
   const methods = useFormContext();
@@ -26,13 +26,13 @@ const FormButtons = ({ collectForm, loading }: any) => {
     const isValid = await form.trigger(resourceNames(state.step));
     if (!isValid && form.formState.isDirty) return;
     dispatch({
-      type: "CHANGE_SKIP_STATE",
+      type: 'CHANGE_SKIP_STATE',
       resource: resourceNames(state.step),
       payload: true,
     });
 
     if (!isEnd()) {
-      dispatch({ type: "SKIP" });
+      dispatch({ type: 'SKIP' });
     }
   };
 
@@ -44,7 +44,7 @@ const FormButtons = ({ collectForm, loading }: any) => {
 
   const prev = () => {
     if (!isStart()) {
-      dispatch({ type: "PREV" });
+      dispatch({ type: 'PREV' });
     }
   };
 
@@ -53,9 +53,9 @@ const FormButtons = ({ collectForm, loading }: any) => {
       {({ ...methods }) => (
         <div className="flex justify-between items-center my-5 md:mt-7">
           <Button
-            variant={"secondary"}
+            variant={'secondary'}
             className={`text-foreground  border hover:bg-foreground hover:text-background transition duration-150 border-foreground mr-auto px-3 ${
-              isStart() ? "invisible" : ""
+              isStart() ? 'invisible' : ''
             }`}
             type="button"
             onClick={prev}
@@ -67,33 +67,28 @@ const FormButtons = ({ collectForm, loading }: any) => {
           <div className="flex items-center justify-end gap-2">
             <Button
               type="button"
-              variant={"outline"}
+              variant={'outline'}
               onClick={skip}
               disabled={isEnd() || form.formState.isDirty}
               className={
                 isEnd() ||
-                resourceNames(state.step) === "patient" ||
-                resourceNames(state.step) === "socialHistory" ||
+                resourceNames(state.step) === 'patient' ||
+                resourceNames(state.step) === 'socialHistory' ||
                 form.formState.isDirty
-                  ? "hidden px-3"
-                  : "px-3"
+                  ? 'hidden px-3'
+                  : 'px-3'
               }
             >
               يتخطى <SkipForward className="ml-3 w-4 h-4" />
             </Button>
 
-            <Button
-              type="button"
-              disabled={isEnd()}
-              className={isEnd() ? "hidden px-3" : "px-3"}
-              onClick={next}
-            >
+            <Button type="button" disabled={isEnd()} className={isEnd() ? 'hidden px-3' : 'px-3'} onClick={next}>
               التالي <ArrowBigRight className="ml-3 w-5 h-5" />
             </Button>
           </div>
 
-          <Button type="submit" className={isEnd() ? "bg-primary" : "hidden"}>
-            {loading ? "إرسال البيانات" : "إرسال البيانات"}
+          <Button type="submit" className={isEnd() ? 'bg-primary' : 'hidden'}>
+            {loading ? 'إرسال البيانات' : 'إرسال البيانات'}
             {loading && (
               <span className="ml-2 animate-spin">
                 <RefreshCcw className="h-4 w-4 text-white" />

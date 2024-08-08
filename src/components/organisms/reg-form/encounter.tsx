@@ -29,8 +29,8 @@ const Encounter = ({ fieldsSchema, index, title, description }: any) => {
   };
 
   const collectForm = async () => {
-    const isValid = await form.trigger('encounters');
-    if (!isValid) return;
+    // const isValid = await form.trigger('encounters');
+    // if (!isValid) return;
     dispatch({
       type: 'ADD_RESOURCE',
       resource: 'encounters',
